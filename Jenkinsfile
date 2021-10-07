@@ -8,7 +8,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'echo Prepare'
+                echo 'Prepare'
             }
         }
         stage('Test') {
@@ -18,7 +18,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'echo Test'
+                echo 'Test'
             }
         }
         stage('Deploy') {
@@ -28,7 +28,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'Echo Deploy'
+                echo 'Deploy'
             }
         }
     }
